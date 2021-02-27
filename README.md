@@ -115,6 +115,87 @@ Now it is time to commit the work
 `$ git commit -m 'Added JWT auth File'`
 
 ### D. Commit some changes in the Feature 1 branch and rebase it to the Integration branch
+
+![CreateGitBranch3](https://github.com/prakashgkhaire/BDMAssessment/blob/Integration/Images/11.png)
+
+`$ git checkout Integration`
+
+`$ git merge Feature1`
+
 ### E. Merge the Integration branch into Hotfix and Production branch to update these branches
+
+![CreateGitBranch3](https://github.com/prakashgkhaire/BDMAssessment/blob/Integration/Images/12.png)
+
+`$ ls -l`
+
+`$ git status`
+
+`$ git add Images`
+
+`$ git commit - 'Add Command Screenshots'`
+
+`$ git branch`
+
+`$ git push origin Integration`
+
 ### F. Commit some changes in Feature 1 branch, and then merge it into Integration, Hotfix, and Production branch. Delete this branch once merging is complete
+
+![CreateGitBranch3](https://github.com/prakashgkhaire/BDMAssessment/blob/Integration/Images/12.png)
+
+`$ ls -l`
+
+`$ git status`
+
+`$ git add Images`
+
+`$ git commit - 'Add Command Screenshots'`
+
+`$ git branch`
+
+`$ git push origin Integration`
+
+![CreateGitBranch3](https://github.com/prakashgkhaire/BDMAssessment/blob/Integration/Images/13.png)
+
+`$ git branch -D Feature1`
+
+`$ git checkout HotFix`
+
+`$ vi logging.py`
+
 ### G. Commit some changes in the Hotfix branch and merge it into the Production as well as the Integration branch
+
+![CreateGitBranch3](https://github.com/prakashgkhaire/BDMAssessment/blob/Integration/Images/14.png)
+
+`$ git add logging.py`
+
+`$ git push --set-upstream origin Hotfix`
+
+![CreateGitBranch3](https://github.com/prakashgkhaire/BDMAssessment/blob/Integration/Images/15.png)
+
+`$ git branch`
+
+`$ git checkout production`
+
+`$ git branch`
+
+![CreateGitBranch3](https://github.com/prakashgkhaire/BDMAssessment/blob/Integration/Images/16.png)
+
+`$ git stash`
+
+`$ git checkout Production`
+
+`$ git branch`
+
+`$ git checkout production`
+
+`$ git merge HotFix`
+
+![CreateGitBranch3](https://github.com/prakashgkhaire/BDMAssessment/blob/Integration/Images/17.png)
+
+`$  git branch`
+
+`$ git checkout Integration`
+
+`$ git merge HotFix`
+
+
