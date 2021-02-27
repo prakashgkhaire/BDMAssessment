@@ -48,6 +48,6 @@ Now it is time to commit the work
 
 `$ git branch -a`
 
-![CreateGitDirectory](https://github.com/prakashgkhaire/BDMAssessment/blob/Integration/Images/5.png)
+![CreateGitDirectory](https://github.com/prakashgkhaire/BDMAssessment/blob/Integration/Images/5_1.png)
 
-![CreateGitDirectory](https://github.com/prakashgkhaire/BDMAssessment/blob/Integration/Images/6.png)
+![CreateGitDirectory](https://github.com/prakashgkhaire/BDMAssessment/blob/Integration/Images/5_2.png)
