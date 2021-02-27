@@ -54,8 +54,67 @@ Now it is time to commit the work
 
 `$ git checkout -b Integration`
 
+### B. Subsequently, create Feature 1 and 2 branches that integrate to the Integration branch as shown in the above figure
+
 ![CreateGitBranch3](https://github.com/prakashgkhaire/BDMAssessment/blob/Integration/Images/5_2.png)
 
 `$ git checkout -b Feature1`
 
 `$ git checkout -b Feature2`
+
+![CreateGitBranch3](https://github.com/prakashgkhaire/BDMAssessment/blob/Integration/Images/7.png)
+
+`$ git checkout Feature2`
+
+`$ touch main.py`
+
+`$ vi main.py`
+
+`$ cat main.py`
+
+`git add main.py`
+
+`git commit -m 'Added main.py'`
+
+`git push --set-upstream origin Feature2`
+
+### C. Commit some changes in the Feature 2 branch and merge it into the Integration branch. Delete this branch once merging is complete
+
+![CreateGitBranch3](https://github.com/prakashgkhaire/BDMAssessment/blob/Integration/Images/8.png)
+
+`$ git checkout Integration`
+
+`$ git merge Feature2`
+
+![CreateGitBranch3](https://github.com/prakashgkhaire/BDMAssessment/blob/Integration/Images/9.png)
+
+`$ git checkout Feature1`
+
+`$ vi logging.py`
+
+`$ cat logging.py`
+
+`$ git add logging.py`
+
+`$ git commit -m 'Added file for basic logging`
+
+`$ git push --set-upstream origin Feature1`
+
+![CreateGitBranch3](https://github.com/prakashgkhaire/BDMAssessment/blob/Integration/Images/10.png)
+
+`$ git checkout Integration`
+
+`$ git checkout Feature1`
+
+`$ vi auth.py`
+
+`$ cat auth.py`
+
+`$ git add auth.py`
+
+`$ git commit -m 'Added JWT auth File'`
+
+### D. Commit some changes in the Feature 1 branch and rebase it to the Integration branch
+### E. Merge the Integration branch into Hotfix and Production branch to update these branches
+### F. Commit some changes in Feature 1 branch, and then merge it into Integration, Hotfix, and Production branch. Delete this branch once merging is complete
+### G. Commit some changes in the Hotfix branch and merge it into the Production as well as the Integration branch
