@@ -42,12 +42,20 @@ Now it is time to commit the work
 
 ### A. Start with the Production branch (master branch), and then create a HotFix  and Integration branch
 
-![CreateGitDirectory](https://github.com/prakashgkhaire/BDMAssessment/blob/Integration/Images/4.png)
+![CreateGitBranch1](https://github.com/prakashgkhaire/BDMAssessment/blob/Integration/Images/4.png)
 
 `$ git branch -M production`
 
 `$ git branch -a`
 
-![CreateGitDirectory](https://github.com/prakashgkhaire/BDMAssessment/blob/Integration/Images/5_1.png)
+![CreateGitBranch2](https://github.com/prakashgkhaire/BDMAssessment/blob/Integration/Images/5_1.png)
 
-![CreateGitDirectory](https://github.com/prakashgkhaire/BDMAssessment/blob/Integration/Images/5_2.png)
+`$ git checkout -b HotFix`
+
+`$ git checkout -b Integration`
+
+![CreateGitBranch3](https://github.com/prakashgkhaire/BDMAssessment/blob/Integration/Images/5_2.png)
+
+`$ git checkout -b Feature1`
+
+`$ git checkout -b Feature2`
